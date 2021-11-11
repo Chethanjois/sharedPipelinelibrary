@@ -3,12 +3,12 @@ def call (body)
 def config = [:]
 body.resolveStrategy = Clousre.DELEGATE_FIRST
 body.delegate = config
-body ()
+body()
 
 pipeline {
   agent any
   stages {
-    stage ('Build')
+    stage('Build')
     {
       sh 'echo "Helloworld" '
     }
