@@ -10,7 +10,9 @@ pipeline {
   stages {
     stage('Build')
     steps {
+      script {
         sh 'echo "Helloworld"'
+      }
     }    
   }
 }
