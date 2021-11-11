@@ -8,12 +8,13 @@ body()
 pipeline {
   agent any
   stages {
-    stage('Build')
+    stage('Build') {
     steps {
       script {
         sh 'echo "Helloworld"'
       }
-    }    
+    }  
+    }  
   }
 }
 
